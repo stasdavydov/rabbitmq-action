@@ -11,9 +11,12 @@ See [action.yml](action.yml)
 Basic:
 ```yaml
 steps:
-- uses: nijel/rabbitmq-action@v1.0.0
+- uses: getong/rabbitmq-action@v1
   with:
-    rabbitmq version: '5'
+    rabbitmq version: '3.8.2-management-alpine'
+    host port: 5672
+    rabbitmq user: 'user'
+    rabbitmq password: 'noBahC3e'
 ```
 
 # License
