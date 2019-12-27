@@ -11,7 +11,7 @@ See [action.yml](action.yml)
 Basic:
 ```yaml
 steps:
-- uses: getong/rabbitmq-action@v1
+- uses: getong/rabbitmq-action@v1.1
   with:
     rabbitmq version: '3.8.2-management-alpine'
     host port: 5672
