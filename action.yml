@@ -21,6 +21,10 @@ inputs:
     description: 'the rabbitmq password'
     required: false
     default: ''
+  rabbitmq vhost:
+    description: 'the rabbitmq vhost option'
+    required: false
+    default: ''
 runs:
   using: 'docker'
   image: 'Dockerfile'
