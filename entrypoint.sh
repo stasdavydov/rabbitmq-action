@@ -1,6 +1,5 @@
 #!/bin/sh
 
-docker_run="docker run"
-docker_run="$docker_run -d --hostname $INPUT_HOST -p $INPUT_HOST_PORT:5672 -e RABBITMQ_DEFAULT_USER=$INPUT_RABBITMQ_USER -e RABBITMQ_DEFAULT_PASS=$INPUT_RABBITMQ_PASSWORD -e RABBITMQ_DEFAULT_VHOST=$INPUT_RABBITMQ_VHOST rabbitmq:$INPUT_RABBITMQ_VERSION"
+docker_run="docker run -d --hostname rabbitmq -p 5672:5672 rabbitmq:3.9.8"
 
 sh -c "$docker_run"
