@@ -11,13 +11,11 @@ See [action.yml](action.yml)
 Basic:
 ```yaml
 steps:
-- uses: getong/rabbitmq-action@v1.2
+- uses: stasdavydov/rabbitmq-action@v1.2
   with:
-    rabbitmq version: '3.8.2-management-alpine'
+    rabbitmq version: 'latest'
+    host: my-rabbitmq
     host port: 5672
-    rabbitmq user: 'user'
-    rabbitmq password: 'noBahC3e'
-    rabbitmq vhost: 'vhost_name'
 ```
 
 # License
