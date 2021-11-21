@@ -11,7 +11,7 @@ See [action.yml](action.yml)
 Basic:
 ```yaml
 steps:
-- uses: stasdavydov/rabbitmq-action@v1.2
+- uses: stasdavydov/rabbitmq-action@v1.3
   with:
     rabbitmq version: 'latest'
     host: my-rabbitmq
