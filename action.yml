@@ -9,6 +9,10 @@ inputs:
     description: 'Version of RabbitMQ to use'
     required: false
     default: 'latest'
+  host:
+    description: 'Host'
+    required: false
+    default: rabbitmq
   host port:
     description: 'The port of host'
     required: false
@@ -16,7 +20,7 @@ inputs:
   rabbitmq user:
     description: 'the rabbitmq username'
     required: false
-    default: 'user'
+    default: ''
   rabbitmq password:
     description: 'the rabbitmq password'
     required: false
