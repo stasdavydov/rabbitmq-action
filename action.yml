@@ -1,34 +1,9 @@
 name: 'Setup RabbitMQ with username and password'
 description: 'Setup RabbitMQ'
-author: 'getong'
+author: 'stasdavydov'
 branding:
   icon: 'database'
   color: 'orange'
-inputs:
-  rabbitmq version:
-    description: 'Version of RabbitMQ to use'
-    required: false
-    default: 'latest'
-  host:
-    description: 'Host'
-    required: false
-    default: rabbitmq
-  host port:
-    description: 'The port of host'
-    required: false
-    default: 5672
-  rabbitmq user:
-    description: 'the rabbitmq username'
-    required: false
-    default: ''
-  rabbitmq password:
-    description: 'the rabbitmq password'
-    required: false
-    default: ''
-  rabbitmq vhost:
-    description: 'the rabbitmq vhost option'
-    required: false
-    default: ''
 runs:
   using: 'docker'
   image: 'Dockerfile'
